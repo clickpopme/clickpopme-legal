@@ -1,8 +1,8 @@
-# Privacy Policy — Dashboard Launcher
+# Privacy Policy — My Mini App Launcher
 
 **Last updated:** 1 May 2026
 
-This Privacy Policy describes how the **Dashboard Launcher** Chrome browser extension ("the Extension", "we", "our") handles your information.
+This Privacy Policy describes how the **My Mini App Launcher** Chrome browser extension ("the Extension", "we", "our") handles your information.
 
 The Extension is published under the name **ClickPopMe**. ClickPopMe is a publishing handle and is not a registered company or trading name.
 
@@ -10,7 +10,7 @@ The Extension is published under the name **ClickPopMe**. ClickPopMe is a publis
 
 ## 1. Summary
 
-Dashboard Launcher is a local-only utility. It lets you upload `.html` files from your computer and launch them as mini "dashboards" inside your Chrome browser. **All data stays on your device.** We do not collect, transmit, sell, or share any personal information. We do not use analytics, advertising, tracking, or remote servers of any kind.
+My Mini App Launcher is a local-only utility. It lets you upload `.html` files from your computer and launch them as mini apps inside your Chrome browser. **All data stays on your device.** We do not collect, transmit, sell, or share any personal information. We do not use analytics, advertising, tracking, or remote servers of any kind.
 
 If you want a one-line summary: the Extension never sends your data anywhere.
 
@@ -18,12 +18,12 @@ If you want a one-line summary: the Extension never sends your data anywhere.
 
 ## 2. What information the Extension handles
 
-The Extension only handles content that you actively choose to upload. Specifically, when you add a dashboard, the Extension stores the following on your own device:
+The Extension only handles content that you actively choose to upload. Specifically, when you save a mini app, the Extension stores the following on your own device:
 
-- A name you type for the dashboard.
-- A randomly generated identifier (UUID) used internally to look the dashboard up.
+- A name you type for the mini app.
+- A randomly generated identifier (UUID) used internally to look the mini app up.
 - The full text contents of the `.html` file you uploaded.
-- A timestamp recording when the dashboard was created.
+- A timestamp recording when the mini app was created.
 
 The Extension does **not** access, collect, or process:
 
@@ -37,14 +37,14 @@ The Extension does **not** access, collect, or process:
 
 ## 3. Where your data is stored
 
-All data created or uploaded through the Extension is stored **locally on your own device** using your browser's built-in **IndexedDB** storage (database name: `dashboards`). This data:
+All data created or uploaded through the Extension is stored **locally on your own device** using your browser's built-in **IndexedDB** storage. This data:
 
 - Never leaves your computer.
 - Is not transmitted to the publisher, to Google, or to any third party.
 - Is not synchronised across devices through Chrome Sync or any other service.
 - Is accessible only to you and to other software running under your user account on that device.
 
-If you uninstall the Extension, clear browsing data for the Extension, or use Chrome's "Remove site data" tools, the stored dashboards will be permanently deleted.
+If you uninstall the Extension, clear browsing data for the Extension, or use Chrome's "Remove site data" tools, the stored mini apps will be permanently deleted.
 
 ---
 
@@ -53,7 +53,7 @@ If you uninstall the Extension, clear browsing data for the Extension, or use Ch
 The Extension uses the minimum permissions required to function:
 
 - **Toolbar action / popup** — to show the Extension's interface when you click its icon.
-- **`chrome.tabs.create`** — used only to open the dashboard viewer page (`viewer.html`), bundled inside the Extension itself, in a new tab when you click a saved tile. The Extension does not read or modify any other tab.
+- **chrome.tabs.create** — used only to open the mini app viewer page (`viewer.html`), bundled inside the Extension itself, in a new tab when you click a saved tile. The Extension does not read or modify any other tab.
 
 The Extension does **not** request access to:
 
@@ -67,7 +67,7 @@ The Extension does **not** request access to:
 
 The Extension makes **no network requests**. It does not contact any server, API, analytics provider, advertising network, content delivery network, or remote logging service. It contains no third-party tracking SDKs.
 
-The HTML files you upload are rendered locally inside a sandboxed page (`display.html`) within the Extension. If a dashboard you uploaded contains references to external resources (for example, a `<script src="https://...">` tag, an embedded image URL, or a link), opening that dashboard may cause your browser to make requests to those external addresses. Those requests are caused by the content of your own HTML file, not by the Extension itself, and are governed by the privacy practices of the destinations you have referenced.
+The HTML files you upload are rendered locally inside a sandboxed page (`display.html`) within the Extension. If a mini app you uploaded contains references to external resources (for example, a `<script src="https://...">` tag, an embedded image URL, or a link), opening that mini app may cause your browser to make requests to those external addresses. Those requests are caused by the content of your own HTML file, not by the Extension itself, and are governed by the privacy practices of the destinations you have referenced.
 
 ---
 
@@ -87,9 +87,9 @@ We do not sell, rent, share, transfer, or disclose your information to any third
 
 You have full control over your data at all times:
 
-- **View** — open the Extension popup to see all saved dashboards.
+- **View** — open the Extension popup to see all saved mini apps.
 - **Edit / replace** — use the edit button on any tile to rename or replace its HTML.
-- **Delete a single dashboard** — click the "×" button on a tile.
+- **Delete a single mini app** — click the "×" button on a tile.
 - **Delete all data** — uninstall the Extension, or clear the Extension's site data via Chrome's settings (`chrome://settings/content/all`).
 
 Because no data is ever sent to us, there is no separate request you need to make to delete information from any server.
@@ -104,7 +104,7 @@ The Extension is not directed at children under 13. It does not knowingly collec
 
 ## 10. Security
 
-Your dashboards are stored in your browser's IndexedDB under your operating system user profile. Their security depends on the security of your device and your Chrome profile. You should keep your computer and browser up to date and avoid uploading confidential information that other users of the same device account could view.
+Your mini apps are stored in your browser's IndexedDB under your operating system user profile. Their security depends on the security of your device and your Chrome profile. You should keep your computer and browser up to date and avoid uploading confidential information that other users of the same device account could view.
 
 The Extension renders uploaded HTML inside a Chrome **sandboxed** page so that the HTML cannot access the Extension's storage or other browser data. Even so, you should only upload HTML files whose contents you trust, because HTML can include scripts that perform their own actions when rendered.
 

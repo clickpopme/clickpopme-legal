@@ -1,8 +1,8 @@
-# Terms of Service — Dashboard Launcher
+# Terms of Service — My Mini App Launcher
 
 **Last updated:** 1 May 2026
 
-These Terms of Service ("Terms") govern your use of the **Dashboard Launcher** Chrome browser extension ("the Extension"), published under the handle **ClickPopMe** ("we", "us", "our"). ClickPopMe is a publishing handle and is not a registered company or trading name.
+These Terms of Service ("Terms") govern your use of the **My Mini App Launcher** Chrome browser extension ("the Extension"), published under the handle **ClickPopMe** ("we", "us", "our"). ClickPopMe is a publishing handle and is not a registered company or trading name.
 
 By installing or using the Extension, you agree to these Terms. If you do not agree, do not install or use the Extension.
 
@@ -43,7 +43,7 @@ You must not use the Extension to store, render, or distribute content that is i
 
 ## 4. Risk of running uploaded HTML
 
-HTML files can contain scripts, embedded resources, and links to external sites. When you open a saved dashboard, the Extension renders the HTML inside a Chrome **sandboxed** page, which restricts the HTML's access to other browser data. However:
+HTML files can contain scripts, embedded resources, and links to external sites. When you open a saved mini app, the Extension renders the HTML inside a Chrome **sandboxed** page, which restricts the HTML's access to other browser data. However:
 
 - Sandboxing does not prevent the HTML from making outgoing network requests to addresses it references.
 - Sandboxing does not guarantee that a malicious or buggy script will not crash, freeze, or otherwise affect your browser tab.
@@ -71,7 +71,7 @@ To the maximum extent permitted by law, our aggregate liability to you for any c
 
 ## 7. Data and privacy
 
-Your use of the Extension is also subject to our [Privacy Policy](https://clickpopme.github.io/clickpopme-legal/dashboard-launcher/privacy/), which forms part of these Terms. The Extension does not collect, transmit, or share your data; all dashboards are stored locally on your device.
+Your use of the Extension is also subject to our [Privacy Policy](https://clickpopme.github.io/clickpopme-legal/my-mini-app-launcher/privacy/), which forms part of these Terms. The Extension does not collect, transmit, or share your data; all mini apps are stored locally on your device.
 
 ---
 
