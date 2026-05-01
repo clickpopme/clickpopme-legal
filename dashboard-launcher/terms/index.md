@@ -71,7 +71,7 @@ To the maximum extent permitted by law, our aggregate liability to you for any c
 
 ## 7. Data and privacy
 
-Your use of the Extension is also subject to our **Privacy Policy** (`PRIVACY_POLICY.md`), which forms part of these Terms. The Extension does not collect, transmit, or share your data; all dashboards are stored locally on your device.
+Your use of the Extension is also subject to our [Privacy Policy](https://clickpopme.github.io/clickpopme-legal/dashboard-launcher/privacy/), which forms part of these Terms. The Extension does not collect, transmit, or share your data; all dashboards are stored locally on your device.
 
 ---
 
