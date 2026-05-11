@@ -1,6 +1,6 @@
 # Privacy Policy — Simple FAQ
 
-**Last updated:** 7 May 2026
+**Last updated:** 11 May 2026
 
 This Privacy Policy describes how the **Simple FAQ** Chrome browser extension ("the Extension", "we", "our") handles your information.
 
@@ -10,7 +10,7 @@ The Extension is published under the name **ClickPopMe**. ClickPopMe is a publis
 
 ## 1. Summary
 
-Simple FAQ is a free, local-only utility. It lets you view, search, and organise your own list of FAQ entries inside your Chrome browser. Entries can be added directly in the Extension or imported from a CSV file you supply. **All data stays on your device.** We do not collect, transmit, sell, or share any personal information. We do not use analytics, advertising, tracking, or remote servers of any kind.
+Simple FAQ is a free, local-only utility. It gives small teams a private answer bank inside Chrome — save your own customer replies, company FAQs, internal processes, and policies, then search and copy them with one click. Entries can be added directly in the Extension or imported from a CSV file you supply. **All data stays on your device.** We do not collect, transmit, sell, or share any personal information. We do not use analytics, advertising, tracking, or remote servers of any kind.
 
 If you want a one-line summary: the Extension never sends your data anywhere.
 
@@ -18,16 +18,18 @@ If you want a one-line summary: the Extension never sends your data anywhere.
 
 ## 2. What information the Extension handles
 
-The Extension only handles content that you actively create or import. Specifically, when you save an FAQ entry, the Extension stores the following on your own device:
+The Extension only handles content that you actively create or import. Specifically, when you save an answer, the Extension stores the following on your own device:
 
-- The **title** you type for the entry.
-- The **description / answer** text.
+- The **title** (the question or label).
+- The **answer / description** text.
 - The **category** name you assign (optional).
 - Any **tags** you assign (optional).
+- The **internal notes** field (optional, staff-only context — never copied with the answer).
+- A **favourite** flag if you mark the entry.
 - A randomly generated identifier (UUID) used internally to look the entry up.
-- Timestamps recording when the entry was created and last updated.
+- Timestamps recording when the entry was created, last updated, and most recently used or copied.
 
-The Extension also stores a small **theme preference** (`light`, `dark`, or `system`) so it remembers how you like it displayed.
+The Extension also stores a small set of preferences (theme — light, dark, or system; layout density — comfortable or compact) so it remembers how you like it displayed.
 
 The Extension does **not** access, collect, or process:
 

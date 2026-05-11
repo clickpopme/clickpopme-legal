@@ -1,6 +1,6 @@
 # Terms of Service — Simple FAQ
 
-**Last updated:** 7 May 2026
+**Last updated:** 11 May 2026
 
 These Terms of Service ("Terms") govern your use of the **Simple FAQ** Chrome browser extension ("the Extension"), published under the handle **ClickPopMe** ("we", "us", "our"). ClickPopMe is a publishing handle and is not a registered company or trading name.
 
@@ -10,7 +10,7 @@ By installing or using the Extension, you agree to these Terms. If you do not ag
 
 ## 1. The service
 
-The Extension is a free local browser utility that lets you view, search, and organise a personal list of FAQ entries inside your browser. You can add entries directly in the Extension or import them from a CSV file you supply, and you can export your entries back to CSV at any time. The Extension does not connect to any server or external service operated by us.
+The Extension is a free local browser utility that gives small teams a private answer bank inside Chrome. You can save your own customer replies, company FAQs, internal processes, and policies, then search and copy them with one click. Entries can be added directly in the Extension or imported from a CSV file you supply, and you can export your entries back to CSV at any time. The Extension does not connect to any server or external service operated by us.
 
 ---
 
