@@ -1,6 +1,6 @@
 # Privacy Policy — My Mini App Launcher
 
-**Last updated:** 1 May 2026
+**Last updated:** 28 July 2026
 
 This Privacy Policy describes how the **My Mini App Launcher** Chrome browser extension ("the Extension", "we", "our") handles your information.
 
@@ -18,12 +18,18 @@ If you want a one-line summary: the Extension never sends your data anywhere.
 
 ## 2. What information the Extension handles
 
-The Extension only handles content that you actively choose to upload. Specifically, when you save a mini app, the Extension stores the following on your own device:
+The Extension only handles content that you actively choose to upload or set. Specifically, when you save a mini app, the Extension stores the following on your own device:
 
 - A name you type for the mini app.
 - A randomly generated identifier (UUID) used internally to look the mini app up.
 - The full text contents of the `.html` file you uploaded.
+- A colour you pick for the mini app's tile.
 - A timestamp recording when the mini app was created.
+
+The Extension also stores your display preferences on your own device:
+
+- Whether you chose the grid or list layout.
+- The order you arranged your saved mini apps into.
 
 The Extension does **not** access, collect, or process:
 
@@ -37,28 +43,33 @@ The Extension does **not** access, collect, or process:
 
 ## 3. Where your data is stored
 
-All data created or uploaded through the Extension is stored **locally on your own device** using your browser's built-in **IndexedDB** storage. This data:
+All data created or uploaded through the Extension is stored **locally on your own device**. Your saved mini apps are held in your browser's built-in **IndexedDB** storage, and your display preferences are held in the Extension's own local storage area (`chrome.storage.local`). This data:
 
 - Never leaves your computer.
 - Is not transmitted to the publisher, to Google, or to any third party.
 - Is not synchronised across devices through Chrome Sync or any other service.
 - Is accessible only to you and to other software running under your user account on that device.
 
-If you uninstall the Extension, clear browsing data for the Extension, or use Chrome's "Remove site data" tools, the stored mini apps will be permanently deleted.
+If you uninstall the Extension, clear browsing data for the Extension, or use Chrome's "Remove site data" tools, the stored mini apps and preferences will be permanently deleted.
 
 ---
 
 ## 4. Permissions explained
 
-The Extension uses the minimum permissions required to function:
+The Extension uses the minimum permissions required to function. Its manifest declares exactly one permission:
+
+- **`storage`** — used only to remember your own display preferences on your device: which layout you chose (grid or list) and the order you arranged your saved mini apps into. Nothing stored under this permission is transmitted anywhere. This permission grants the Extension its own private storage area; it does **not** grant access to any website's storage.
+
+It also relies on two capabilities that do not require a manifest permission:
 
 - **Toolbar action / popup** — to show the Extension's interface when you click its icon.
-- **chrome.tabs.create** — used only to open the mini app viewer page (`viewer.html`), bundled inside the Extension itself, in a new tab when you click a saved tile. The Extension does not read or modify any other tab.
+- **`chrome.tabs.create`** — used only to open the mini app viewer page (`viewer.html`), bundled inside the Extension itself, in a new tab when you click a saved tile. The Extension does not read or modify any other tab.
 
 The Extension does **not** request access to:
 
 - Your browsing activity or any website's content.
-- Your tabs' contents, history, downloads, cookies, or storage.
+- Any website's cookies or stored data.
+- Your tabs' contents, history, or downloads.
 - Your microphone, camera, location, or clipboard.
 
 ---
@@ -88,8 +99,9 @@ We do not sell, rent, share, transfer, or disclose your information to any third
 You have full control over your data at all times:
 
 - **View** — open the Extension popup to see all saved mini apps.
-- **Edit / replace** — use the edit button on any tile to rename or replace its HTML.
-- **Delete a single mini app** — click the "×" button on a tile.
+- **Edit / replace** — open Settings (the gear icon in the popup) and use the edit button beside any mini app to rename it, change its colour, or replace its HTML.
+- **Reorder** — drag any mini app into a new position in the Settings list.
+- **Delete a single mini app** — open Settings and use the delete button beside that mini app.
 - **Delete all data** — uninstall the Extension, or clear the Extension's site data via Chrome's settings (`chrome://settings/content/all`).
 
 Because no data is ever sent to us, there is no separate request you need to make to delete information from any server.
