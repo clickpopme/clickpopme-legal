@@ -1,8 +1,8 @@
-# Terms of Service — Simple FAQ
+# Terms of Service — Knackle
 
-**Last updated:** 11 May 2026
+**Last updated:** 21 August 2026
 
-These Terms of Service ("Terms") govern your use of the **Simple FAQ** Chrome browser extension ("the Extension"), published under the handle **ClickPopMe** ("we", "us", "our"). ClickPopMe is a publishing handle and is not a registered company or trading name.
+These Terms of Service ("Terms") govern your use of the **Knackle** Chrome browser extension ("the Extension"), published under the handle **ClickPopMe** ("we", "us", "our"). Knackle was previously published as **Simple FAQ** — it is the same extension under a new name, and these Terms apply equally under either name. ClickPopMe is a publishing handle and is not a registered company or trading name.
 
 By installing or using the Extension, you agree to these Terms. If you do not agree, do not install or use the Extension.
 

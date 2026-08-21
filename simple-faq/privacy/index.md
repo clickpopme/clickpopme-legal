@@ -1,8 +1,8 @@
-# Privacy Policy — Simple FAQ
+# Privacy Policy — Knackle
 
-**Last updated:** 11 May 2026
+**Last updated:** 21 August 2026
 
-This Privacy Policy describes how the **Simple FAQ** Chrome browser extension ("the Extension", "we", "our") handles your information.
+This Privacy Policy describes how the **Knackle** Chrome browser extension ("the Extension", "we", "our") handles your information. Knackle was previously published as **Simple FAQ** — it is the same extension under a new name, and this policy applies equally under either name.
 
 The Extension is published under the name **ClickPopMe**. ClickPopMe is a publishing handle and is not a registered company or trading name.
 
@@ -10,7 +10,7 @@ The Extension is published under the name **ClickPopMe**. ClickPopMe is a publis
 
 ## 1. Summary
 
-Simple FAQ is a free, local-only utility. It gives small teams a private answer bank inside Chrome — save your own customer replies, company FAQs, internal processes, and policies, then search and copy them with one click. Entries can be added directly in the Extension or imported from a CSV file you supply. **All data stays on your device.** We do not collect, transmit, sell, or share any personal information. We do not use analytics, advertising, tracking, or remote servers of any kind.
+Knackle is a free, local-only utility. It gives small teams a private answer bank inside Chrome — save your own customer replies, company FAQs, internal processes, and policies, then search and copy them with one click. Entries can be added directly in the Extension or imported from a CSV file you supply. **All data stays on your device.** We do not collect, transmit, sell, or share any personal information. We do not use analytics, advertising, tracking, or remote servers of any kind.
 
 If you want a one-line summary: the Extension never sends your data anywhere.
 
@@ -24,12 +24,14 @@ The Extension only handles content that you actively create or import. Specifica
 - The **answer / description** text.
 - The **category** name you assign (optional).
 - Any **tags** you assign (optional).
+- An optional **answer type** (for example Customer Reply, Internal FAQ, Process/SOP) and **status** label (for example Customer-Safe, Draft, Needs Review, Internal Only).
+- An optional **expiry date**, and an archived flag once an entry is archived.
 - The **internal notes** field (optional, staff-only context — never copied with the answer).
 - A **favourite** flag if you mark the entry.
 - A randomly generated identifier (UUID) used internally to look the entry up.
 - Timestamps recording when the entry was created, last updated, and most recently used or copied.
 
-The Extension also stores a small set of preferences (theme — light, dark, or system; layout density — comfortable or compact) so it remembers how you like it displayed.
+The Extension also stores a small set of preferences (theme — light, dark, or system; layout density — comfortable or compact), simple interface state (such as which sections are open or closed and whether you have dismissed in-app prompts), and a local count of copy events used for the "Recently used" and favourites features. All of this stays in your browser's localStorage and is never transmitted.
 
 The Extension does **not** access, collect, or process:
 

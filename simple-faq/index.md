@@ -1,6 +1,8 @@
-# Simple FAQ — Legal
+# Knackle — Legal
 
-Simple FAQ is a free Chrome browser extension that gives small teams a private, local answer bank. Save customer replies, company FAQs, internal processes, and policies — then search and copy them with one click. Entries can be added directly or imported from a CSV file. All data is stored locally on your device.
+Knackle (formerly published as **Simple FAQ**) is a free Chrome browser extension that gives small teams a private, local answer bank. Save customer replies, company FAQs, internal processes, and policies — then search with the ⌘K command palette and copy them with one click. Entries can be added directly or imported from a CSV file. All data is stored locally on your device.
+
+Website: [knackle.app](https://knackle.app)
 
 ## Documents
 
