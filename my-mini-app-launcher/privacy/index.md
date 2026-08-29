@@ -1,6 +1,6 @@
 # Privacy Policy — My Mini App Launcher
 
-**Last updated:** 28 July 2026
+**Last updated:** 29 August 2026
 
 This Privacy Policy describes how the **My Mini App Launcher** Chrome browser extension ("the Extension", "we", "our") handles your information.
 
@@ -10,7 +10,9 @@ The Extension is published under the name **ClickPopMe**. ClickPopMe is a publis
 
 ## 1. Summary
 
-My Mini App Launcher is a local-only utility. It lets you upload `.html` files from your computer and launch them as mini apps inside your Chrome browser. **All data stays on your device.** We do not collect, transmit, sell, or share any personal information. We do not use analytics, advertising, tracking, or remote servers of any kind.
+My Mini App Launcher is a local-first utility. It lets you upload `.html` files from your computer and launch them as mini apps inside your Chrome browser. **All data stays on your device.** We do not collect, transmit, sell, or share any personal information. We do not use analytics, advertising, tracking, or remote servers of any kind.
+
+The Extension itself makes no network requests. The only network activity that can occur is a mini app of your own fetching a resource it references — for example a library file such as Vue or Tailwind. That request comes from your page, not from the Extension, and carries none of your data. Section 5 explains this in full.
 
 If you want a one-line summary: the Extension never sends your data anywhere.
 
@@ -30,6 +32,7 @@ The Extension also stores your display preferences on your own device:
 
 - Whether you chose the grid or list layout.
 - The order you arranged your saved mini apps into.
+- The last version of the Extension whose release notes you have viewed, so that the same release notes are not shown to you twice.
 
 The Extension does **not** access, collect, or process:
 
@@ -58,7 +61,7 @@ If you uninstall the Extension, clear browsing data for the Extension, or use Ch
 
 The Extension uses the minimum permissions required to function. Its manifest declares exactly one permission:
 
-- **`storage`** — used only to remember your own display preferences on your device: which layout you chose (grid or list) and the order you arranged your saved mini apps into. Nothing stored under this permission is transmitted anywhere. This permission grants the Extension its own private storage area; it does **not** grant access to any website's storage.
+- **`storage`** — used only to remember your own display preferences on your device: which layout you chose (grid or list), the order you arranged your saved mini apps into, and the last version whose release notes you viewed. Nothing stored under this permission is transmitted anywhere. This permission grants the Extension its own private storage area; it does **not** grant access to any website's storage.
 
 It also relies on two capabilities that do not require a manifest permission:
 
@@ -76,9 +79,20 @@ The Extension does **not** request access to:
 
 ## 5. Network and third-party services
 
-The Extension makes **no network requests**. It does not contact any server, API, analytics provider, advertising network, content delivery network, or remote logging service. It contains no third-party tracking SDKs.
+The Extension has no server, no analytics, no tracking and no third-party services, and it never sends your files anywhere. **The Extension itself makes no network requests of any kind.** It does not contact any server, API, analytics provider, advertising network, or remote logging service, and it contains no third-party tracking SDKs. Nothing you save is transmitted, and nothing about your use of the Extension reaches the publisher.
 
-The HTML files you upload are rendered locally inside a sandboxed page (`display.html`) within the Extension. If a mini app you uploaded contains references to external resources (for example, a `<script src="https://...">` tag, an embedded image URL, or a link), opening that mini app may cause your browser to make requests to those external addresses. Those requests are caused by the content of your own HTML file, not by the Extension itself, and are governed by the privacy practices of the destinations you have referenced.
+The only network activity that can occur is caused by a mini app of your own. The HTML files you upload are rendered locally inside a sandboxed page (`display.html`) within the Extension. If a mini app you uploaded references an external resource — most commonly a library file such as Vue, React or Tailwind, but equally an image, font, stylesheet, or link — opening that mini app may cause your browser to fetch that resource. Those requests are made by your own page, not by the Extension. They carry none of your data: no file contents, no mini app names, no identifiers, and nothing reaches the publisher. They are governed by the privacy practices of the destinations you have referenced.
+
+Scripts are the one case the Extension restricts. So that single-file apps which bundle their own code, or which load a common library, are able to run, the sandboxed page's Content Security Policy permits scripts from `blob:` URLs — code your own page builds in memory, which involves no network request at all — and from a fixed list of six well-known public library CDNs:
+
+- `cdn.jsdelivr.net`
+- `unpkg.com`
+- `cdnjs.cloudflare.com`
+- `cdn.tailwindcss.com`
+- `esm.sh`
+- `ajax.googleapis.com`
+
+No other host may supply a script to a mini app. This allowlist is a Content Security Policy, not a host permission: it grants the Extension no access to those sites, and the Extension never chooses, injects, or requests a script itself — a library is fetched only if the file you uploaded already references it. The Extension's own pages are separately restricted to code bundled inside the Extension and cannot load remote code at all.
 
 ---
 
@@ -118,7 +132,7 @@ The Extension is not directed at children under 13. It does not knowingly collec
 
 Your mini apps are stored in your browser's IndexedDB under your operating system user profile. Their security depends on the security of your device and your Chrome profile. You should keep your computer and browser up to date and avoid uploading confidential information that other users of the same device account could view.
 
-The Extension renders uploaded HTML inside a Chrome **sandboxed** page so that the HTML cannot access the Extension's storage or other browser data. Even so, you should only upload HTML files whose contents you trust, because HTML can include scripts that perform their own actions when rendered.
+The Extension renders uploaded HTML inside a Chrome **sandboxed** page so that the HTML cannot access the Extension's storage or other browser data. The sandbox also limits where a mini app may load scripts from: code your own page builds in memory, and the six public library CDNs listed in section 5. Even so, you should only upload HTML files whose contents you trust, because HTML can include scripts that perform their own actions when rendered.
 
 ---
 

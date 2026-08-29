@@ -1,6 +1,6 @@
 # Terms of Service — My Mini App Launcher
 
-**Last updated:** 1 May 2026
+**Last updated:** 29 August 2026
 
 These Terms of Service ("Terms") govern your use of the **My Mini App Launcher** Chrome browser extension ("the Extension"), published under the handle **ClickPopMe** ("we", "us", "our"). ClickPopMe is a publishing handle and is not a registered company or trading name.
 
@@ -10,7 +10,7 @@ By installing or using the Extension, you agree to these Terms. If you do not ag
 
 ## 1. The service
 
-The Extension is a local browser utility that lets you upload `.html` files from your own device, store them in your browser's local storage, and open them in a new browser tab. It does not connect to any server or external service operated by us.
+The Extension is a local browser utility that lets you upload `.html` files from your own device, store them in your browser's local storage, and open them in a new browser tab. We operate no server, and the Extension makes no network requests of its own. A mini app you open may fetch resources that its own HTML references; the [Privacy Policy](https://clickpopme.github.io/clickpopme-legal/my-mini-app-launcher/privacy/) describes this.
 
 ---
 
@@ -45,7 +45,7 @@ You must not use the Extension to store, render, or distribute content that is i
 
 HTML files can contain scripts, embedded resources, and links to external sites. When you open a saved mini app, the Extension renders the HTML inside a Chrome **sandboxed** page, which restricts the HTML's access to other browser data. However:
 
-- Sandboxing does not prevent the HTML from making outgoing network requests to addresses it references.
+- Sandboxing does not prevent the HTML from making outgoing network requests to addresses it references, including fetching library files from the public CDNs the Extension's Content Security Policy permits.
 - Sandboxing does not guarantee that a malicious or buggy script will not crash, freeze, or otherwise affect your browser tab.
 - You are responsible for the trustworthiness of any HTML you upload.
 
@@ -77,7 +77,7 @@ Your use of the Extension is also subject to our [Privacy Policy](https://clickp
 
 ## 8. Third-party services
 
-The Extension does not integrate with any third-party services operated by us. If your uploaded HTML references third-party resources (for example, external scripts, fonts, or images), your interactions with those third parties are governed solely by their own terms and privacy policies, not by these Terms.
+The Extension does not integrate with any third-party service, and it sends nothing to any third party. If your uploaded HTML references third-party resources (for example, external scripts, fonts, or images), your interactions with those third parties are governed solely by their own terms and privacy policies, not by these Terms. The Extension permits a mini app to load scripts from a fixed list of public library CDNs, set out in section 5 of the Privacy Policy; that permission is not an integration, sends no data, and is exercised only when your own file references such a library.
 
 The Extension is distributed via the Chrome Web Store. Your installation and use of the Extension via the Chrome Web Store is also subject to the Chrome Web Store Terms of Service and Google's policies.
 
