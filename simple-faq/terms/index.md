@@ -1,6 +1,6 @@
 # Terms of Service — Knackle
 
-**Last updated:** 21 August 2026
+**Last updated:** 29 August 2026
 
 These Terms of Service ("Terms") govern your use of the **Knackle** Chrome browser extension ("the Extension"), published under the handle **ClickPopMe** ("we", "us", "our"). Knackle was previously published as **Simple FAQ** — it is the same extension under a new name, and these Terms apply equally under either name. ClickPopMe is a publishing handle and is not a registered company or trading name.
 
@@ -66,6 +66,8 @@ Your use of the Extension is also subject to our [Privacy Policy](https://clickp
 ## 7. Third-party services
 
 The Extension does not integrate with any third-party services operated by us, and makes no network requests of any kind.
+
+The Extension does contain links to outside sites — the Knackle home page, its Chrome Web Store listing, and sharing options for LinkedIn and email. These open in a new browser tab only when you click them, and load nothing into the Extension. Those sites are operated by other people: we do not control them and are not responsible for their content, their terms, or their handling of your information.
 
 The Extension is distributed via the Chrome Web Store. Your installation and use of the Extension via the Chrome Web Store is also subject to the Chrome Web Store Terms of Service and Google's policies.
 

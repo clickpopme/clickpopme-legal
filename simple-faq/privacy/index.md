@@ -1,6 +1,6 @@
 # Privacy Policy — Knackle
 
-**Last updated:** 21 August 2026
+**Last updated:** 29 August 2026
 
 This Privacy Policy describes how the **Knackle** Chrome browser extension ("the Extension", "we", "our") handles your information. Knackle was previously published as **Simple FAQ** — it is the same extension under a new name, and this policy applies equally under either name.
 
@@ -78,6 +78,10 @@ The Extension makes **no network requests**. It does not contact any server, API
 All scripts, styles, and assets used by the Extension are bundled into the Extension package at the time of submission to the Chrome Web Store. There are no remote scripts, remote stylesheets, remote fonts, or runtime code loading.
 
 CSV files you choose to import are read entirely on your local device using the browser's standard `FileReader` API. The contents are parsed locally and stored in your browser's `localStorage`. No part of an imported CSV file is transmitted off your device.
+
+The Extension includes a few links out: the Knackle home page, its Chrome Web Store listing, and the sharing options under Settings → About & help. Nothing is loaded from those sites into the Extension, and no request is made to any of them until you click. A link opens in a new browser tab; from that point you are on someone else's site, governed by their privacy policy rather than this one.
+
+None of your entries are involved. The LinkedIn sharing option passes only Knackle's own Chrome Web Store address, so the receiving page knows which extension you are recommending — it carries nothing about you or your library. The email sharing option opens your own mail client with a message already written, which is not sent unless you send it.
 
 ---
 
