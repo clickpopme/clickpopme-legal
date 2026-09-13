@@ -1,6 +1,6 @@
 # Privacy Policy — Knackle
 
-**Last updated:** 29 August 2026
+**Last updated:** 13 September 2026
 
 This Privacy Policy describes how the **Knackle** Chrome browser extension ("the Extension", "we", "our") handles your information. Knackle was previously published as **Simple FAQ** — it is the same extension under a new name, and this policy applies equally under either name.
 
@@ -58,10 +58,17 @@ If you uninstall the Extension, clear browsing data for the Extension, or use Ch
 
 ## 4. Permissions explained
 
-The Extension declares **no permissions** in its `manifest.json` file. It uses only the default capabilities granted to extension pages:
+The Extension declares **one permission** in its `manifest.json` file:
+
+- **`sidePanel`** — allows the Extension to show its own bundled page in Chrome's side panel, so you can search and copy your saved answers beside whatever you are working on. This permission grants no access to your data: it does not let the Extension read the page in the adjacent tab, or in any other tab.
+
+The Extension declares **no host permissions**, so it has no access to any website.
+
+Apart from that one permission, it uses only the default capabilities granted to extension pages:
 
 - **Toolbar action** — to open the Extension's interface in a new tab when you click its icon.
 - **chrome.tabs.create** for the Extension's own URL — used by the service worker only to open the Extension's bundled `index.html` page when the toolbar icon is clicked. No other tab is read or modified.
+- **A keyboard shortcut** — `Ctrl+Shift+K` (`Command+Shift+K` on macOS) opens the side panel. This is the `commands` manifest key, which is not a permission; you can change or remove the shortcut at `chrome://extensions/shortcuts`.
 
 The Extension does **not** request access to:
 
