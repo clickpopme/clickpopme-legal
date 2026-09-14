@@ -1,6 +1,6 @@
 # Privacy Policy — Knackle
 
-**Last updated:** 14 September 2026
+**Last updated:** 15 September 2026
 
 This Privacy Policy describes how the **Knackle** Chrome browser extension ("the Extension", "we", "our") handles your information. Knackle was previously published as **Simple FAQ** — it is the same extension under a new name, and this policy applies equally under either name.
 
@@ -31,7 +31,7 @@ The Extension only handles content that you actively create or import. Specifica
 - A randomly generated identifier (UUID) used internally to look the entry up.
 - Timestamps recording when the entry was created, last updated, and most recently used or copied.
 
-The Extension also stores a small set of preferences (theme — light, dark, or system; layout density — comfortable or compact), simple interface state (such as which sections are open or closed and whether you have dismissed in-app prompts), and a local count of copy events used for the "Recently used" and favourites features. All of this stays in your browser's localStorage and is never transmitted.
+The Extension also stores a small set of preferences (theme — light, dark, or system; layout density — comfortable or compact), simple interface state (such as which sections are open or closed and whether you have dismissed in-app prompts), a local count of how many times you have pressed Copy together with a flag recording whether you have rated, snoozed or dismissed the one-time "rate this extension" prompt — used only to decide when, if ever, that prompt is shown — and, from 2.6.0, a flag recording whether you have seen the one-time Quick Drawer notice. All of this stays in your browser's localStorage and is never transmitted.
 
 The Extension does **not** access, collect, or process:
 
@@ -68,7 +68,7 @@ The Extension declares **no host permissions**, so it has no access to any websi
 Apart from those two permissions, it uses only the default capabilities granted to extension pages:
 
 - **Toolbar action** — to open the Extension's interface in a new tab when you click its icon.
-- **chrome.tabs.create** for the Extension's own URL — used by the service worker only to open the Extension's bundled `index.html` page when the toolbar icon is clicked. No other tab is read or modified.
+- **chrome.tabs.create** for the Extension's own URL — used to open the Extension's bundled `index.html` page, from the toolbar icon and from the Quick Drawer's logo. When you press the drawer shortcut or use the icon menu, Chrome tells the Extension only the numeric id of the current tab, so the drawer can be attached to that tab. No tab's content, address or history is read, and no other tab is modified.
 - **A keyboard shortcut** — `Ctrl+Shift+K` (`Command+Shift+K` on macOS) opens the side panel. This is the `commands` manifest key, which is not a permission; you can change or remove the shortcut at `chrome://extensions/shortcuts`.
 
 The Extension does **not** request access to:
@@ -114,7 +114,7 @@ You have full control over your data at all times:
 - **Edit** — open any entry and update its title, answer, category, or tags.
 - **Delete a single entry** — use the delete action on any entry tile.
 - **Export everything** — Settings → Export CSV downloads a complete backup as a UTF-8 CSV file.
-- **Import from CSV** — Settings → Import CSV replaces all current entries with the contents of a CSV file you supply.
+- **Import from CSV** — Settings → Import CSV previews the file, then either appends its rows to your library or replaces all current entries, as you choose.
 - **Delete all data** — uninstall the Extension, or clear the Extension's site data via Chrome's settings (`chrome://settings/content/all`).
 
 Because no data is ever sent to us, there is no separate request you need to make to delete information from any server.
