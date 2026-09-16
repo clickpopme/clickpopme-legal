@@ -1,6 +1,6 @@
 # Privacy Policy — Knackle
 
-**Last updated:** 15 September 2026
+**Last updated:** 16 September 2026
 
 This Privacy Policy describes how the **Knackle** Chrome browser extension ("the Extension", "we", "our") handles your information. Knackle was previously published as **Simple FAQ** — it is the same extension under a new name, and this policy applies equally under either name.
 
@@ -31,7 +31,7 @@ The Extension only handles content that you actively create or import. Specifica
 - A randomly generated identifier (UUID) used internally to look the entry up.
 - Timestamps recording when the entry was created, last updated, and most recently used or copied.
 
-The Extension also stores a small set of preferences (theme — light, dark, or system; layout density — comfortable or compact), simple interface state (such as which sections are open or closed and whether you have dismissed in-app prompts), a local count of how many times you have pressed Copy together with a flag recording whether you have rated, snoozed or dismissed the one-time "rate this extension" prompt — used only to decide when, if ever, that prompt is shown — and, from 2.6.0, a flag recording whether you have seen the one-time Quick Drawer notice. All of this stays in your browser's localStorage and is never transmitted.
+The Extension also stores a small set of preferences (theme — light, dark, or system; layout density — comfortable or compact), simple interface state (such as which sections are open or closed and whether you have dismissed in-app prompts), a local count of how many times you have pressed Copy together with a flag recording whether you have rated, snoozed or dismissed the one-time "rate this extension" prompt — used only to decide when, if ever, that prompt is shown — and, from 2.6.0, a flag recording whether you have seen the one-time Quick Drawer notice. From 2.6.2 it also keeps an import history — the file name and size of each CSV you import, whether it appended or replaced your answers, how many it touched, and when — so you can match imports to your own file versions. The file itself is not kept. All of this stays in your browser's localStorage and is never transmitted.
 
 The Extension does **not** access, collect, or process:
 
